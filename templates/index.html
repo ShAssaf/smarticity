@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Upload and Processing</title>
+    <link rel="stylesheet" href="web-style.css">
+</head>
+<body>
+    <h1>Upload your CSV file for Electricity Consumption Analysis</h1>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fugit enim, necessitatibus repellat quia eos deserunt dolores magni maxime aliquid harum aut quis quisquam exercitationem sit laudantium, tempore dignissimos et.</p>
+    <br>
+    <form action="{{ url_for('upload_file') }}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv" required>
+        <button type="submit">Upload and Process</button>
+    </form>
+</body>
+</html>
